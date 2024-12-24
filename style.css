@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  padding-top: 80px;
+}
+
+header {
+  background-color: #8ea7e9;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+}
+h2 {
+  padding: 20px;
+}
+
+form {
+  background-color: #e5e0ff;
+  padding: 50px;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #555;
+}
+
+form input,
+form select {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 17px;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #7286d3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(114, 134, 211, 0.3);
+}
+
+form div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  margin: 0;
+  vertical-align: middle;
+}
+
+form label[for="bookFormIsComplete"] {
+  margin: 0;
+  font-weight: normal;
+  font-size: 17px;
+  color: #555;
+  cursor: pointer;
+  line-height: 1;
+}
+
+form button {
+  background-color: #7286d3;
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #5a6fb8;
+  transform: translateY(-2px);
+}
+
+#bookFormSubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+#bookFormSubmit span {
+  margin-left: 10px;
+}
+
+#bookFormSubmit button {
+  background-color: #8ea7e9;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#bookFormSubmit button:hover {
+  background-color: #5a6fb8;
+}
+
+#searchSubmit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#searchSubmit button {
+  background-color: #7286d3;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#searchSubmit button:hover {
+  background-color: #5a6fb8;
+}
+
+section {
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#incompleteBookList,
+#completeBookList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-item {
+  background-color: #efebff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(50% - 10px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.book-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-item button {
+  margin-top: 15px;
+  margin-right: 10px;
+  background-color: #7286d3;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.book-item button:hover {
+  background-color: #5a6fb8;
+  transform: translateY(-2px);
+}
+
+.book-item button:first-of-type {
+  background-color: #ffab4c;
+  margin-right: 10px;
+}
+
+.book-item button:first-of-type:hover {
+  background-color: #e69b44;
+}
+
+.book-item button:nth-of-type(2) {
+  background-color: #ff5a30;
+  color: #fff;
+}
+
+.book-item button:nth-of-type(2):hover {
+  background-color: #ff3a1d;
+}
